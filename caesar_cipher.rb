@@ -23,6 +23,8 @@ def caesar_cipher(str, shift_position)
   str.split('').each do |letter|
     if alphabet.include? letter.downcase
       result << rotated_alphabet[alphabet.index(letter.downcase)]
+    else
+      result << letter
     end
   end
   result
