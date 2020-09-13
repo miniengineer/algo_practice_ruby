@@ -25,7 +25,7 @@ def caesar_cipher(str, shift_position)
       result << rotated_alphabet[alphabet.index(letter.downcase)]
     end
   end
-  puts result
+  result
 end
 
 caesar_cipher("What a string!", 5)
