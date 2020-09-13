@@ -21,7 +21,6 @@ def caesar_cipher(str, shift_position)
   rotated_alphabet = alphabet.rotate(shift_position)
   result = ''
   str.split('').each do |letter|
-    # require 'pry'; binding.pry
     if alphabet.include? letter.downcase
       result << rotated_alphabet[alphabet.index(letter.downcase)]
     end
